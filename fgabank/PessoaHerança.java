@@ -1,18 +1,14 @@
 package fgabank;
 
 public class PessoaHerança {
-	String nome;
-	String email;
-	String telefone;
+	
+	private String nome;
+	private String email;
+	private String telefone;
 	
 	
 	public PessoaHerança() {
 		//método construtor default = preenchimento dos atributos é opicional
-	}
-	public PessoaHerança(String nome, String cpf, String rg) {
-		this.nome = nome;
-		this.email = email;
-		this.telefone = telefone;
 	}
 	
 	public PessoaHerança(String nome, String cpf, String rg, String profissao, String email, String telefone) {

@@ -6,7 +6,10 @@ public class PessoaJuridica extends PessoaHerança{
 	private String segmento;
 	private String responsavel;
 	
-	
+	public PessoaJuridica() {
+		super();
+	}
+
 	public PessoaJuridica(String cnpj, String segmento, String responsavel) {
 		super();
 		this.cnpj = cnpj;

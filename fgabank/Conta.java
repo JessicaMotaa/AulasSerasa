@@ -5,8 +5,8 @@ public class Conta {
 	//atributos
 	private int agencia;
 	private int numeroConta;
-	private double saldo;
-	private String titular;
+	protected double saldo;
+	private PessoaHerança titular;
 
 
 	//construtores
@@ -14,7 +14,7 @@ public class Conta {
 	
 	}
 
-	public Conta(int agencia, int numeroConta, String titular) { //sobrecarregado
+	public Conta(int agencia, int numeroConta, PessoaHerança titular) { //sobrecarregado
 		super();
 		this.agencia = agencia;
 		this.numeroConta = numeroConta;
@@ -70,11 +70,11 @@ public class Conta {
 		return saldo;
 	}
 
-	public String getTitular() {
+	public PessoaHerança getTitular() {
 		return titular;
 	}
 
-	public void setTitular(String titular) {
+	public void setTitular(PessoaHerança titular) {
 		this.titular = titular;
 	}
 
